@@ -1,0 +1,20 @@
+{
+  "name": "hhsa",
+  "version": "0.5.1",
+  "description": "HHSA intranet",
+  "main": "dist/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kyler Drake",
+  "license": "ISC",
+  "devDependencies": {
+    "css-mqpacker": "^5.0.1",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-postcss": "^6.1.1",
+    "postcss-cssnext": "^2.6.0",
+    "postcss-import": "^8.1.2"
+  }
+}
