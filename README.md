@@ -1,7 +1,5 @@
-# resourcecenter
-Intranet Project
 # [HHSA Resource Center](http://resourcecenter.hsd.lan)
-
+Intranet Project
 
 ## Table of contents
 
