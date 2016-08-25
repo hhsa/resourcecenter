@@ -82,9 +82,9 @@ See package.json for dependancies.
 
 **Naming conventions**
 
->Classes are used by CSS
->ID's are used by JS/JQ
->Names/actions/methods are used by PHP
+* Classes are used by CSS
+* ID's are used by JS/JQ
+* Names/actions/methods are used by PHP
 	
 Use divs with class hooks for most styling. Generic top level stuff like 'body', 'p', 'a', and 'h1'-'h4' are styled a bit. Moving more stylings to the top and reusing existing stylings is best.
 No need to be super verbose with the hooks. Don't include ID's/names if they aren't needed. As of 12/30/2015 they are only used on form pages.
