@@ -12,7 +12,7 @@ Intranet Project
 
 ## Directory Structure
 
-Within the directory you'll find the following folders and files, logically grouping common assets and providing precompiled and minified variations. You'll see something like this:
+Within the directory you'll find the following folders and files. SRC assets/css folder is compiled with PostCSS plugins into the Dist assets/css folder. JS will be compiled soon. Images are compressed in the gulp file.
 
 ```
 hhsa/
