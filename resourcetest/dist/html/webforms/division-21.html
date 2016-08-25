@@ -1,0 +1,228 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<title>Form Test</title>	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" content="text/html; charset=UTF-8"/> <!-- Force it out of compatibility view -->
+	<link href="../../assets/css/style.css" rel="stylesheet">
+</head>
+
+
+
+<body>
+<!--<input type="checkbox" id="navigationtoggler">-->
+
+<div class="wrapper">
+		
+	<div class="menu" id="menu">		
+		<!--<label class="toggle" for="navigationtoggler"><img src="img/icons/ic_menu_white_24dp_2x.png"></label>--> <h1><a href="index.html">Resource Center</a></h1>
+	
+		<div class="navigation">
+			<ul>			
+				<li><a href="../index.html">Home</a></li>
+				<li class="active"><a href="../ssd.html">Social Services</a></li>
+				<li><a href="../bhs.html">BHS</a></li>
+				<li><a href="../phd.html">Public Health</a></li>
+				<li><a href="../admin.html">Administration</a></li>
+				<li><a href="../http://intranet.sisq.lan/" target="_blank">County Intranet</a></li>				
+			</ul>	
+		</div>	
+	</div>
+	
+	<div class="hero">
+		<img src="../../assets/img/shasta.png">
+	
+		<div class="hero-title">
+			<h2>Form Test</h2>
+		</div>		
+		
+	</div>
+	
+	<div class="main">	
+
+			<form class="content-text" id="content-form" name="application-form" autocomplete="off">		
+					
+				<h3>Division 21</h3>
+
+				<fieldset>
+					<label>Did the customer self-declare the disability?</label>
+					<input type="hidden" name="label[1]" value="Did the customer self-declare the disability? "/>
+					<label class="radio"><input type="radio" name="question[1]" value="yes" required><span class="outer"><span class="inner"></span></span>Yes</label>				
+					<br>
+					<label class="radio"><input type="radio" name="question[1]" value="no"><span class="outer"><span class="inner"></span></span>No</label>
+
+					<label>Were accommodations provided to the customer?</label>
+					<input type="hidden" name="label[2]" value="Were accommodations provided to the customer? "/>
+					<label class="radio"><input type="radio" name="question[2]" value="yes" required><span class="outer"><span class="inner"></span></span>Yes</label>				
+					<br>
+					<label class="radio"><input type="radio" name="question[2]" value="no"><span class="outer"><span class="inner"></span></span>No</label>
+
+					<label>Explain:</label>
+					<input type="hidden" name="label[3]" value="Explain: "/>
+					<textarea name="question[3]" required/></textarea>
+				</fieldset>
+
+				<fieldset>
+					<label>Was an auxiliary aid provided to the customer?</label>
+					<div class="form-dropdown">
+						<input type="hidden" name="label[4]"" value="Was an auxiliary aid provided to the customer? "/>
+						<select name="question[4]" required>
+							<option value="Brailled Material">Brailled Material</option>
+							<option value="Taped Text">Taped Text</option>
+							<option value="Large Print Material">Large Print Material</option>
+							<option value="TDD">TDD</option>
+							<option value="Other">Other</option>
+						</select>
+					</div>
+
+					 <!-- Hidden -->
+					<div class="form-hidden" id="hidden-by-dropdown">
+						<label>Explain:</label>
+						<input type="hidden" name="label[5]" value="Explain: "/>
+						<textarea name="question[5]" required/></textarea>
+					</div>							
+				</fieldset>
+
+				<fieldset>
+					<label>Does the applicant/recipient have any bilingual/interpretive needs?</label>
+					<input type="hidden" name="label[6]" value="Does the applicant/recipient have any bilingual/interpretive needs>? "/>
+					<label class="radio"><input type="radio" id="yes-show" name="question[6]" value="yes" required><span class="outer"><span class="inner"></span></span>Yes</label>
+					<br>
+					<label class="radio"><input type="radio" id="yes-show" name="question[6]" value="no"><span class="outer"><span class="inner"></span></span>No</label>
+					
+					<!-- Hidden -->
+					<div class="form-hidden" id="hidden-by-click">
+						<label>Customer's written primary language:</label>
+						<div class="form-dropdown">
+							<input type="hidden" name="label[7]"" value="Customer's written primary language: "/>
+							<select name="question[7]" required>
+								<option value="English">English</option>
+								<option value="Spanish">Spanish</option>
+								<option value="Cambodian">Cambodian</option>
+								<option value="Lao">Lao</option>
+								<option value="Hmong">Hmong</option>
+								<option value="Vietnamese">Vietnamese</option>
+								<option value="Chinese">Chinese</option>
+								<option value="Korean">Korean</option>
+								<option value="Russian">Russian</option>
+								<option value="Arabic">Arabic</option>
+								<option value="Armenian">Armenian</option>
+								<option value="Farsi">Farsi</option>
+								<option value="Tagalog">Tagalog</option>
+							</select>
+						</div>
+
+						<label>Customer's spoken primary language:</label>
+						<div class="form-dropdown">
+							<input type="hidden" name="label[8]"" value="Customer's spoken primary language: "/>
+							<select name="question[8]" required>
+								<option value="English">English</option>
+								<option value="Spanish">Spanish</option>
+								<option value="Sign Langauge">Sign Language</option>
+								<option value="Cambodian">Cambodian</option>
+								<option value="Lao">Lao</option>
+								<option value="Hmong">Hmong</option>
+								<option value="Vietnamese">Vietnamese</option>
+								<option value="Chinese">Chinese</option>
+								<option value="Korean">Korean</option>
+								<option value="Russian">Russian</option>
+								<option value="Arabic">Arabic</option>
+								<option value="Armenian">Armenian</option>
+								<option value="Farsi">Farsi</option>
+								<option value="Tagalog">Tagalog</option>
+							</select>
+						</div>
+
+						<label>How was it identified that the customer needed a translator or wanted forms in another language?</label>
+						<div class="form-dropdown">
+							<input type="hidden" name="label[9]"" value="How was it identified that the customer needed a translator or wanted forms in another language? "/>
+							<select name="question[9]" required>
+								<option value="Customer Declared">Customer Declared</option>
+								<option value="Employee Discovery">Employee Discovery</option>
+								<option value="Application or other form">Application or other form</option>
+								<option value="Other">Other notification</option>
+							</select>
+						</div>
+
+	 					<!-- Hidden -->
+						<div class="form-hidden" id="hidden-by-dropdown">
+							<label>Explain:</label>
+							<input type="hidden" name="label[10]" value="Explain: "/>
+							<textarea name="question[10]" required/></textarea>
+						</div>
+					</div>					
+				</fieldset>
+					
+				<fieldset>
+					<label>Has anyone received benefits in any other County or State?</label>
+					<input type="hidden" name="label[5]" value="Has anyone received benifits in any other County or State? "/>
+					<textarea name="question[5]"required/></textarea>
+
+					<label>List names of CalWORKS applicants SFIS was complete for:</label>
+					<input type="hidden" name="label[6]" value="List names of CalWORKS applicants SFIS was complete for: "/>
+					<textarea name="question[6]"required/></textarea>
+					
+					<label>List income for the month of application:</label>
+					<input type="hidden" name="label[7]" value="List income for the month of application: "/>
+					<textarea name="question[7]"required/></textarea>
+
+					<label>List resources claimed at application:</label>
+					<input type="hidden" name="label[8]" value="List resources claimed at application: "/>
+					<textarea name="question[8]"required/></textarea>
+						
+					<label>Is there a medical emergency?</label>
+					<input type="hidden" name="label[9]" value="Is there a medical emeregency? "/>
+					<textarea name="question[9]"required/></textarea>
+				</fieldset>
+
+				<button type="submit" id="button-submit" class="button-round"><img src="../../assets/img/icons/ic_check_white_24dp_2x.png"></button> <button type="button" id="button-reset" class="button-round"><img src="../../assets/img/icons/ic_clear_white_24dp_2x.png"></button>				
+			
+			</form>					
+
+		<div class="content-text">
+			<div class="content-section hidden" id="content-hidden">
+				<h3>Template</h3>
+				<p id="template"></p>
+			</div>
+		</div>
+		
+	</div>
+	
+	<footer class="footer">
+		<ul>
+			<li><a href="http://sisq34.sisq.lan/wfc/logon" target="_blank">Kronos</a></li>
+			<li><a href="https://www.co.siskiyou.ca.us" target="_blank">County internet</a></li>
+			<li>Photograph courtesy of Bill Singleton</li>
+		</ul>	
+	</footer>
+
+</div>
+
+<!-- JS Load -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="../../assets/js/forms.js"></script>
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDocumentTitle", document.docontent + "/" + document.title]);
+  _paq.push(["setCookieDocontent", "*.resourcecenter.hsd.lan"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//resourcecenter.hsd.lan/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//resourcecenter.hsd.lan/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+</body>
+</html>
+				
+				
+	

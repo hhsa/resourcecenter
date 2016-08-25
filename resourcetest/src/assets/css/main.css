@@ -1,0 +1,12 @@
+/* Main class */
+.main
+{
+    position: relative;
+    z-index: 3;
+
+    width: 100%;
+    min-height: 1200px;
+    margin: 30rem auto 0;
+
+    background: #f8fafa;
+}

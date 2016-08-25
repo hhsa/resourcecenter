@@ -1,0 +1,91 @@
+/* Small screen support */
+
+/* Most tablets */
+@media screen and (max-width: 1420px)
+{
+    .navigation
+    {
+        text-align: right;
+    }
+}
+@media screen and (max-width: 1200px)
+{
+    .menu
+    {
+        height: 5rem;
+
+        transition: all .4s linear;
+    }
+    .navigation
+    {
+        text-align: center;
+    }
+}
+
+/* 1080p Androids and iPhone plus */
+@media  screen and (max-width: 1080px)
+{
+    .menu
+    {
+        height: 7rem;
+    }
+    .hero-title
+    {
+        top: 13rem;
+        transition: all .4s linear;
+    }
+}
+
+/* iPhones and 720p Androids */
+@media screen and (max-width: 760px)
+{
+    .menu
+    {
+        height: 9rem;
+    }
+    .menu h1
+    {
+        text-align: center;
+    }
+    .hero
+    {
+        margin-top: 2rem;
+
+        transition: all .4s linear;
+    }
+    .hero-title
+    {
+        right: auto;
+        left: 2rem;
+    }
+
+    .main
+    {
+        margin: 30rem auto 0;
+
+        transition: all .4s linear;
+    }
+}
+
+/* Super small phones */
+@media screen and (max-width: 480px)
+{
+    .menu
+    {
+        height: 10rem;
+    }
+    .hero
+    {
+        top: 3rem;
+    }
+
+    .hero-title
+    {
+        top: 8rem;
+    }
+
+    .main
+    {
+        margin: 31rem auto 0;
+    }
+}

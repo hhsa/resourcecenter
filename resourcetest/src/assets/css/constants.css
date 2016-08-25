@@ -1,0 +1,77 @@
+/* Body constants */
+body
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125em;
+    font-weight: 400;
+    line-height: 2;
+
+    width: auto !important;
+    width: 480px;
+    min-width: 480px;
+    margin: 0;
+
+    color: #2e484a;
+}
+
+
+p
+{
+    margin: 0;
+    padding: 0;
+}
+a
+{
+    padding: 0;
+
+    text-decoration: none;
+
+    color: #2e484a;
+}
+a:hover,
+a:focus,
+a:active a:visited
+{
+    text-decoration: none;
+
+    color: #2e484a;
+    outline: 0;
+}
+
+/*	Header styling
+
+h1 is menu header h2 are UL titles
+
+*/
+h1
+{
+    font-size: 2em;
+
+    margin: 0;
+    padding: 0 0 0 1rem;
+}
+h2
+{
+    font-size: 2em;
+
+    margin: 0;
+
+    color: #f8fafa;
+}
+
+h3
+{
+    font-size: 1.5em;
+
+    margin: 0;
+
+    color: #57787a;
+}
+h4
+{
+    font-size: 1.25em;
+
+    margin: 0;
+
+    color: #57787a;
+}

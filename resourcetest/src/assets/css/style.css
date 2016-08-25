@@ -1,0 +1,59 @@
+/* Z-index levels: 
+1-hero
+2-page title
+3-main and all content
+10-footer
+11-menu and navigation
+
+Colors
+	background, borders: #f8fafa; Grey
+	cards, h1, text in card titles, content nav: #fff; White
+	menu, titles, h2, radio buttons: #02aab3; Teal
+	accent color, active/hovered buttons and input/textfields: #fbc02d; Yellow
+	default body text/links: rgba(0, 0, 0, 0.87); 87% opacity black
+
+Example markup
+.class 
+{
+	position: ;
+	z-index: ;
+	display: ;
+	overflow: ;
+	
+	font: ;
+	line: ;
+	
+	width: ;
+	height: ;
+	margins: ;
+	padding: ;
+	border: ;
+
+	color: ;
+	background: ;
+	
+	effect: ;
+	transitions: ;
+}
+*/
+
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400');
+
+/* Body constants and header style import */
+@import url(constants.css);
+/* Menu and nav bar import */
+@import url(menu.css);
+/* Hero image import */
+@import url(hero.css);
+/* Main class import */
+@import url(main.css);
+/* Content design import */
+@import url(content.css);
+/* Footer design import */
+@import url(footer.css);
+/* Forms design import */
+@import url(form.css);
+/* Media queries import */
+@import url(media.css);

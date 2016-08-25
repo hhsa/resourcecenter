@@ -1,0 +1,208 @@
+/* Hidden div and transitions */
+.hidden
+{
+    display: none;
+
+    max-height: 0rem;
+    margin-bottom: -.75rem;
+}
+.visible
+{
+    display: default;
+
+    max-height: 1000rem;
+}
+
+/* Forms element styling */
+.form-hidden
+{
+    display: none;
+}
+fieldset
+{   
+    padding: 0;
+    padding: 1rem 0 1rem 0;
+    border-width: 22.5rem;
+    border-style: none;
+    border-color: #2e484a;
+    border-bottom: .125rem solid;
+}
+label
+{
+    display: block;
+}
+input[type=text]
+{
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+
+    width: 22.5rem;
+    height: 2rem;
+
+    transition: all .25s linear;
+
+    color: #57787a;
+    border-style: none;
+    border-color: #57787a;
+    border-bottom: .125rem solid;
+}
+input[type=text]:focus
+{
+    border-bottom-color: #02aab3;
+    outline: none;
+}
+textarea
+{
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+
+    overflow: auto;
+
+    width: 22.5rem;
+    min-height: 2rem;
+
+    transition: all .25s linear;
+
+    color: #57787a;
+    border: none;
+    border-color: #2e484a;
+    border-bottom: .125rem solid;
+    outline: none;
+}
+textarea:focus
+{
+    overflow: auto;
+
+    min-height: 8rem;
+
+    border-bottom-color: #ffac01;
+    outline: none;
+}
+
+/* Radio button styling */
+.radio
+{
+    font-size: inherit;
+    line-height: 3.063rem;
+
+    display: inline-block;
+}
+.radio:hover .inner
+{
+    transform: scale(.5);
+
+    opacity: .5;
+}
+
+.radio input
+{
+    width: .063rem;
+    height: .063rem;
+
+    opacity: 0;
+}
+.radio input:checked + .outer .inner
+{
+    transform: scale(1);
+
+    opacity: 1;
+}
+.radio input:checked + .outer
+{
+    border: .188rem solid #ffac01;
+}
+.radio input:focus + .outer .inner
+{
+    transform: scale(1);
+
+    opacity: 1;
+}
+.radio .outer
+{
+    display: block;
+    float: left;
+
+    width: 1.125rem;
+    height: 1.125rem;
+    margin: .5rem .438rem .5rem .5rem;
+
+    border: .188rem solid rgba(0, 0, 0, .38);
+    border-radius: 50%;
+}
+.radio .inner
+{
+    display: block;
+
+    width: .875rem;
+    height: .875rem;
+    margin: .125rem;
+
+    transition: all .25s linear;
+    transform: scale(0);
+
+    opacity: 0;
+    border-radius: 50%;
+    background-color: #ffac01;
+}
+
+/* Select dropdown design */
+.form-dropdown
+{
+    overflow: hidden;
+
+    width: 21.875rem;
+    height: 2rem;
+
+    border: none;
+    border-radius: .125rem;
+    outline: none;
+    background: url(../img/icons/ic_expand_more_black_24dp_2x.png) no-repeat right #f8fafa;
+}
+.form-dropdown select
+{
+    font-size: inherit;
+
+    width: 24.375rem;
+    height: 2rem;
+
+    color: #2e484a;
+    border-style: none;
+    border-radius: .125rem;
+    background: transparent;
+
+    appearance: none;
+}
+
+/* Button design and animation */
+.button-round
+{
+    font-size: inherit;
+    line-height: 3.125rem;
+
+    width: 3.750rem;
+    height: 3.750rem;
+    margin: 1rem 2rem 1rem 3.750rem;
+
+    transition: all .4s linear;
+
+    color: #f8fafa;
+    border-style: none;
+    border-radius: 50%;
+    outline: none;
+    background-color: rgba(0, 0, 0, .38);
+    box-shadow: 0rem .063rem .188rem rgba(0,0,0,.12), 0 .063rem .125rem rgba(0,0,0,.24);
+}
+.button-round:hover
+{
+    background: #02aab3;
+    box-shadow: 0rem .625rem 1.250rem rgba(0,0,0,.19), 0rem .375rem .375rem rgba(0,0,0,.23);
+}
+.button-round img
+{
+    width: 2.500rem;
+    height: 2.500rem;
+
+    vertical-align: middle;
+}

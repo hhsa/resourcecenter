@@ -1,0 +1,60 @@
+/* Content class animation and design */
+.content-text
+{
+    width: 70%;
+    margin: 1rem auto;
+}
+.content-list
+{
+    width: 70%;
+    margin: 0 auto;
+    padding: 1rem 0;
+
+    column-count: 3;
+    column-width: 14rem;
+    column-gap: 4rem;
+}
+
+/* Style content */
+.content-section
+{
+    display: inline-block;
+    overflow: hidden;
+
+    margin: 0 auto;
+    padding: 1rem 0 0 0;
+
+    border-width: 22.5rem;
+    border-style: none;
+    border-color: #2e484a;
+    border-bottom: .125rem solid;
+}
+.content-section ul
+{
+    margin: 0;
+    padding: 0;
+
+    text-align: left;
+}
+.content-section ul li
+{
+    padding: .5rem 0;
+
+    list-style-type: none;
+}
+.content-section ul li a
+{
+    cursor: pointer;
+}
+
+/* Cal page color key table design */
+tr td:first-child
+{
+    width: 8.75rem;
+    padding: 0 6.250rem 0 1rem;
+}
+tr td:last-child
+{
+    width: 7.5rem;
+    padding-right: .625rem;
+}

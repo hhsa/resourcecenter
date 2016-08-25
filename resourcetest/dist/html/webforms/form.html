@@ -1,0 +1,261 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<title>Form Test</title>	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" content="text/html; charset=UTF-8"/> <!-- Force it out of compatibility view -->
+	<link href="../../assets/css/style.css" rel="stylesheet">
+</head>
+
+
+
+<body>
+<!--<input type="checkbox" id="navigationtoggler">-->
+
+<div class="wrapper">
+		
+	<div class="menu" id="menu">		
+		<!--<label class="toggle" for="navigationtoggler"><img src="img/icons/ic_menu_white_24dp_2x.png"></label>--> <h1><a href="index.html">Resource Center</a></h1>
+	
+		<div class="navigation">
+			<ul>			
+				<li><a href="../index.html">Home</a></li>
+				<li class="active"><a href="../ssd.html">Social Services</a></li>
+				<li><a href="../bhs.html">BHS</a></li>
+				<li><a href="../phd.html">Public Health</a></li>
+				<li><a href="../admin.html">Administration</a></li>
+				<li><a href="../http://intranet.sisq.lan/" target="_blank">County Intranet</a></li>				
+			</ul>	
+		</div>	
+	</div>
+	
+	<div class="hero">
+		<img src="../../assets/img/shasta.png">
+	
+		<div class="hero-title">
+			<h2>Form Test</h2>
+		</div>		
+		
+	</div>
+	
+	<div class="main">	
+	
+		<div class="content-form">
+
+			<form class="content-form" id="content-form" name="application-form" autocomplete="off">		
+					
+				<h3>Test Form</h3>
+
+				
+				<fieldset>
+					<label>Date:</label>
+					<input type="hidden" name="label[1]" value="Date: "/>
+					<input type="text" name="question[1]" placeholder="month/day/year" required/>
+				</fieldset>
+					
+				<fieldset>
+					<label>Application method:</label>
+					<input type="hidden" name="label[2]" value="Application method: "/>
+					<textarea name="question[2]" required></textarea>
+				</fieldset>
+					
+				<fieldset>
+					<div class="dropdown">
+						<input type="hidden" name="label[3]" value="Program(s) applied for: "/>
+						<select name="question[3]" required>
+							<option selected="Program(s) applied for:" value="" disabled>Program(s) applied for:</option>
+							<option value="CalWORKs">CalWORKs</option>
+							<option value="CalFresh">CalFresh</option>
+							<option value="CMSP">CMSP</option>
+							<option value="MC">MC</option>
+							<option value="GA">GA</option>
+						</select>
+					</div>
+				</fieldset>
+					
+				<fieldset>
+					<label>Has anyone been aided in Siskiyou County in the last 30 days?</label>
+					<input type="hidden" name="label[4]" value="Has anyone been aided in Siskiyou County in the last 30 days? "/>
+					<label class="radio"><input type="radio" name="question[4]" value="yes" required><span class="outer"><span class="inner"></span></span>Yes</label>					
+					<br>
+					<label class="radio"><input type="radio" name="question[4]" value="no"><span class="outer"><span class="inner"></span></span>No</label>
+				</fieldset>
+					
+				<fieldset>
+					<label>Has anyone received benefits in any other County or State?</label>
+					<input type="hidden" name="label[5]" value="Has anyone received benifits in any other County or State? "/>
+					<textarea name="question[5]"required/></textarea>
+
+					<label>List names of CalWORKS applicants SFIS was complete for:</label>
+					<input type="hidden" name="label[6]" value="List names of CalWORKS applicants SFIS was complete for: "/>
+					<textarea name="question[6]"required/></textarea>
+					
+					<label>List income for the month of application:</label>
+					<input type="hidden" name="label[7]" value="List income for the month of application: "/>
+					<textarea name="question[7]"required/></textarea>
+
+					<label>List resources claimed at application:</label>
+					<input type="hidden" name="label[8]" value="List resources claimed at application: "/>
+					<textarea name="question[8]"required/></textarea>
+						
+					<label>Is there a medical emergency?</label>
+					<input type="hidden" name="label[9]" value="Is there a medical emeregency? "/>
+					<textarea name="question[9]"required/></textarea>
+				</fieldset>
+						
+				<fieldset>
+					<label>Was CW Immediate need applied for?</label>
+					<input type="hidden" name="label[11]" value="Was CW Immediate need applied for? "/>
+					<label class="radio"><input class="radio" type="radio" id="hide_1_yes" name="question[11]" value="yes" required><span class="outer"><span class="inner"></span></span>Yes</label>					
+					<br>
+					<label class="radio" checked><input class="radio" type="radio" id="hide_1_no" name="question[11]" value="no" checked><span class="outer"><span class="inner"></span></span>No</label>
+					
+					<!-- Hidden -->
+					<div class="form-hidden" id="hidden_1">
+						<label>Does the customer appear eligible to CalWORKS?</label>
+						<input type="hidden" name="label[12]" value="Does the customer appear eligible to CalWORKS? "/>
+						<label class="radio"><input type="radio" name="question[12]" value="yes" required><span class="outer"><span class="inner"></span></span>Yes</label>					
+						<br>
+						<label class="radio"><input type="radio" name="question[12]" value="no"><span class="outer"><span class="inner"></span></span>No</label>
+					</div>					
+				</fieldset>
+					
+				<fieldset>
+					<label>Is the customer homeless?</label>
+					<input type="hidden" name="label[13]" value="Is the customer homeless? "/>
+					<label class="radio"><input class="radio" type="radio" id="hide_2_yes" name="question[13]" value="yes" required><span class="outer"><span class="inner"></span></span>Yes</label>					
+					<br>
+					<label class="radio" checked><input class="radio" type="radio" id="hide_2_no" name="question[13]" value="no" checked><span class="outer"><span class="inner"></span></span>No</label>
+						
+					<!-- Hidden -->
+					<div class="form-hidden" id="hidden_2">
+						<label>Does the applicant have liquid resources less than $150?</label>
+						<input type="hidden" name="label[14]" value="Does the applicant have liquid resources less than $150? "/>
+						<label class="radio"><input type="radio" name="question[14]" value="yes" required><span class="outer"><span class="inner"></span></span>Yes</label>					
+						<br>
+						<label class="radio"><input type="radio" name="question[14]" value="no"><span class="outer"><span class="inner"></span></span>No</label>
+							
+						<label>Is anyone living in the County on a temporary basis?</label>
+						<input type="hidden" name="label[15]" value="Is anyone living in the County on a temporary basis? "/>
+						<label class="radio"><input type="radio" name="question[15]" value="yes" required><span class="outer"><span class="inner"></span></span>Yes</label>					
+						<br>
+						<label class="radio"><input type="radio" name="question[15]" value="no"><span class="outer"><span class="inner"></span></span>No</label>						
+							
+						<label>Has the family used homeless assistance before?</label>
+						<input type="hidden" name="label[16]" value="Has the family used homeless assistance before? "/>
+						<label class="radio"><input type="radio" name="question[16]" value="yes" required><span class="outer"><span class="inner"></span></span>Yes</label>					
+						<br>
+						<label class="radio"><input type="radio" name="question[16]" value="no"><span class="outer"><span class="inner"></span></span>No</label>
+					</div>
+				</fieldset>
+					
+				<fieldset>
+					<label>Were Expedited Services applied for?</label>					
+					<input type="hidden" name="label[17]" value="Were Expedited Services applied for? "/>
+					<label class="radio"><input class="radio" type="radio" id="hide_3_yes" name="question[17]" value="yes" required><span class="outer"><span class="inner"></span></span>Yes</label>					
+					<br>
+					<label class="radio"><input class="radio" type="radio" id="hide_3_no" name="question[17]" value="no" checked><span class="outer"><span class="inner"></span></span>No</label>
+						
+					<!-- Hidden -->
+					<div class="form-hidden" id="hidden_3">	
+						<label>Does the family have income less than $150?</label>
+						<input type="hidden" name="label[18]" value="Does the family have income less than $150? "/>
+						<label class="radio"><input type="radio" name="question[18]" value="yes" required><span class="outer"><span class="inner"></span></span>Yes</label>					
+						<br>
+						<label class="radio"><input type="radio" name="question[18]" value="no"><span class="outer"><span class="inner"></span></span>No</label>
+							
+						<label>Does the family have liquid resources less than $100?</label>
+						<input type="hidden" name="label[19]" value="Does the family have liquid resources less than $100? "/>
+						<label class="radio"><input type="radio" name="question[19]" value="yes" required><span class="outer"><span class="inner"></span></span>Yes</label>					
+						<br>
+						<label class="radio"><input type="radio" name="question[19]" value="no" ><span class="outer"><span class="inner"></span></span>No</label>
+
+						<label>Is their housing and utilities more than income/resources?</label>
+						<input type="hidden" name="label[20]" value="Is their housing and utilities more than income/resources? "/>
+						<label class="radio"><input type="radio" name="question[20]"value="yes" required><span class="outer"><span class="inner"></span></span>Yes</label>					
+						<br>
+						<label class="radio"><input type="radio" name="question[20]" value="no"><span class="outer"><span class="inner"></span></span>No</label>
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<label>Are there any migrant or seasonal farm workers in the home?</label>
+					<input type="hidden" name="label[21]" value="Are there any migrant or seasonal farm workers in the home? "/>
+					<label class="radio"><input type="radio" name="question[21]" value="yes" required><span class="outer"><span class="inner"></span></span>Yes</label>					
+					<br>
+					<label class="radio"><input type="radio" name="question[21]" value="no"><span class="outer"><span class="inner"></span></span>No</label>
+
+					<label>Verifs received by the customer:</label>
+					<input type="hidden" name="label[22]" value="Verifs received by the customer: "/>
+					<textarea name="question[22]" required/></textarea>
+					
+					<label>Appointment letter sent to customer:</label>
+					<input type="hidden" name="label[23]" value="Appointment letter sent to customer: "/>
+					<label class="radio"><input type="radio" name="question[23]" required><span class="outer"><span class="inner"></span></span>Yes</label>					
+					<br>
+					<label class="radio"><input type="radio" name="question[23]"><span class="outer"><span class="inner"></span></span>No</label>
+						
+					<label>Appointment date and time/Worker assignement:</label>
+					<input type="hidden" name="label[24]" value="Appointment date and time/Worker assignement: "/>
+					<textarea name="question[24]" required/></textarea>
+
+					<label>Additional information sent to the customer:</label>
+					<input type="hidden" name="label[25]" value="Additional information sent to the customer: "/>
+					<textarea name="question[25]" required/></textarea>
+						
+					<label>Completed by:</label>
+					<input type="hidden" name="label[26]" value="Completed by: "/>
+					<input type="text" name="question[26]" placeholder="Name" required/>
+				</fieldset>
+
+				<button type="submit" id="button-submit" class="button-round"><img src="../../assets/img/icons/ic_check_white_24dp_2x.png"></button> <button type="button" id="button-reset" class="button-round"><img src="../../assets/img/icons/ic_clear_white_24dp_2x.png"></button>				
+			
+			</form>
+			
+			<div class="content-section hidden" id="content-hidden">
+				<h3>Template</h3>
+				<p id="template"></p>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	<footer class="footer">
+		<ul>
+			<li><a href="http://sisq34.sisq.lan/wfc/logon" target="_blank">Kronos</a></li>
+			<li><a href="https://www.co.siskiyou.ca.us" target="_blank">County internet</a></li>
+			<li>Photograph courtesy of Bill Singleton</li>
+		</ul>	
+	</footer>
+
+</div>
+
+<!-- JS Load -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="../../assets/js/forms.js"></script>
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDocumentTitle", document.docontent + "/" + document.title]);
+  _paq.push(["setCookieDocontent", "*.resourcecenter.hsd.lan"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//resourcecenter.hsd.lan/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//resourcecenter.hsd.lan/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+</body>
+</html>
+				
+				
+	
