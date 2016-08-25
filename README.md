@@ -11,54 +11,57 @@ Intranet Project
 * [Copyright and license](#copyright-and-license)
 
 ## Directory Structure
+There are two structures, resourcecenter (production) and resourcetest (testing until further notice). resourcecenter's structure is the same as the dist/ from resourcetest, but no html specific folder (all .html in the root).
 
-Within the directory you'll find the following folders and files. SRC assets/css folder is compiled with PostCSS plugins into the Dist assets/css folder. JS will be compiled soon. Images are compressed in the gulp file.
+Within the directory's you'll find the following folders and files. SRC assets/css folder is compiled with PostCSS plugins into the Dist assets/css folder. JS will be compiled soon. Images are compressed in the gulp file.
 
 ```
 hhsa/
-├──dist/
+├── dist/
 │	├── assets/
-│	│	├──	css/
-│	│	│	└── style.css
-│	│	├──img/
-│	│   │	├── icons/
-│	│	│	│	└── icons.png (not all listed)
-│	│	│	└── hero.png
-│	│   └──js/
-│	│   	├──animation.js
-│	│		└── forms.js
-│	└──html/		
-│		├── secure/
-│		│		└── emr.html
+│	│	├── css/
+│	│	│   └── style.css
+│	│	├── img/
+│	│   	│   ├── icons/
+│	│	│   │	└── icons.png (not all listed)
+│	│	│   └── hero.png
+│	│       └── js/
+│	│   	    ├──animation.js
+│	│           └── forms.js
+│	└── html/		
+│	    ├── emr/
+│	    │	 └── emr.html
+│	    ├── aod/
+│	    │    └── aod.html
 │	    ├── webforms/
-│		│		└── forms.html (not all pages listed)
-│		└── index.html (not all pages listed)
+│	    │	   └── forms.html (not all pages listed)
+│	    └── index.html (not all pages listed)
 │   
 ├── src/
 │	├── assets/
-│	│	├──	css/
-│	│   │	├── constants.css
-│	│   │	├── content.css
-│	│   │	├── footer.css
-│	│   │	├── form.css
-│	│   │	├── hero.css
-│	│   │	├── main.css
-│	│   │	├── media.css
-│	│   │	├── menu.css
-│	│	│	└── style.css
-│	│	├──img/
-│	│   │	├── icons/
-│	│	│	│	└── icons.png (not all listed)
-│	│	│	└── hero.png
-│	│   └──js/
-│	│   	├──animation.js
-│	│		└── forms.js
-│	└──html/		
-│		├── secure/
-│		│		└── emr.html
+│	│	├── css/
+│	│   	│    ├── constants.css
+│	│   	│    ├── content.css
+│	│   	│    ├── footer.css
+│	│   	│    ├── form.css
+│	│   	│    ├── hero.css
+│	│   	│    ├── main.css
+│	│   	│    ├── media.css
+│	│   	│    ├── menu.css
+│	│	│    └── style.css
+│	│	├── img/
+│	│   	│   ├── icons/
+│	│	│   │	└── icons.png (not all listed)
+│	│	│   └── hero.png
+│	│   	└── js/
+│	│   	    ├──animation.js
+│	│	    └── forms.js
+│	└── html/		
+│	    ├── secure/
+│	    │	  └── emr.html
 │	    ├── webforms/
-│		│		└── forms.html (not all pages listed)
-│		└── index.html (not all pages listed)
+│	    │	   └── forms.html (not all pages listed)
+│	    └── index.html (not all pages listed)
 │
 ├── README.md
 ├── gulpfile.js
