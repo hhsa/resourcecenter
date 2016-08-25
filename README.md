@@ -155,7 +155,9 @@ Source CSS is compiled with Gulp (see gulpfile.js for setup). If the website mov
 ## Creators
 
 **Kyler Drake**
+
 <kdrake@co.siskiyou.ca.us>
+
 <https://github.com/hhsa>
 
 
